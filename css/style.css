@@ -1,0 +1,39 @@
+.navbar {
+    margin: 0;
+    padding: 3%;
+    text-align: center;
+    overflow: hidden;
+    background-color: #352F2E;
+}
+
+.internal {
+    list-style-type: none;
+    margin-left: 0%;
+}
+
+.button {
+    padding: 15px;
+    margin: .5%;
+    border-radius: 100%;
+    float: right;
+}
+
+.personalInfo {
+    display: flex-inline;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav {
+    float: left;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.nav:hover {
+    background-color: #000000;
+}
