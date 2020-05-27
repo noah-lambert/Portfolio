@@ -12,10 +12,14 @@
 }
 
 .button {
-    padding: 15px;
+    padding: 2px;
     margin: .5%;
     border-radius: 100%;
     float: right;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
 }
 
 .personalInfo {
