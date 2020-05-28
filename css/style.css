@@ -43,3 +43,22 @@
 .nav:hover {
     background-color: #000000;
 }
+
+.resume {
+    padding: .8em;
+    background-color: #352F2E;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.resume:hover {
+    background-color: #000000;
+}
+
+.project {
+    text-align: center;
+}
+
+.contactMe {
+    text-align: center;
+}
