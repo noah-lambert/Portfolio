@@ -54,7 +54,7 @@ body {
 }
 
 .personalInfo {
-    padding: 20%;
+    padding: 20%; 
     display: flex-inline;
     justify-content: center;
     text-align: center;
