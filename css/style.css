@@ -1,35 +1,33 @@
-.navbar {
+body {
     margin: 0;
-    padding: 3%;
+}
+
+.navbar {
+    display: flex;
+    margin: 0;
+    top: 0;
+    width: 100%;
     text-align: center;
-    overflow: hidden;
     background-color: #352F2E;
+    position: fixed;
+    justify-content: space-between;
 }
 
 .internal {
-    list-style-type: none;
-    margin-left: 0%;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.button {
-    padding: 2px;
-    margin: .5%;
-    border-radius: 100%;
-    float: right;
+.external {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
-    height: 25px;
-    width: 25px;
-    background-color: #ffffff;
-}
-
-.personalInfo {
-    display: flex-inline;
-    justify-content: center;
-    text-align: center;
+    width: 10vh;
+    margin-right: 10px;
 }
 
 .nav {
-    float: left;
     display: flex;
     justify-content: center;
     color: #ffffff;
@@ -44,6 +42,24 @@
     background-color: #000000;
 }
 
+.link {
+    padding: 1px;
+    margin: .5%;
+    border-radius: 100%;
+    float: right;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+}
+
+.personalInfo {
+    padding: 20%;
+    display: flex-inline;
+    justify-content: center;
+    text-align: center;
+}
+
 .resume {
     padding: .8em;
     background-color: #352F2E;
@@ -56,9 +72,16 @@
 }
 
 .project {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
 }
 
 .contactMe {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
