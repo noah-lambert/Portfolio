@@ -44,7 +44,7 @@ body {
 
 .link {
     padding: 1px;
-    margin: .5%;
+    margin: 5px;
     border-radius: 100%;
     float: right;
     align-items: center;
@@ -54,14 +54,32 @@ body {
 }
 
 .personalInfo {
-    padding: 20%; 
-    display: flex-inline;
-    justify-content: center;
+    padding: 25%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    
+}
+
+.personalInfo h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px white;
+    margin-bottom: 20px;
+}
+
+.personalInfo h6 {
+    font-size: 1em;
+    text-shadow: 1px 1px white;
+    margin: 0 0 20px;
 }
 
 .resume {
+    display: flex;
+    justify-content: center;
+    width: 100px;
     padding: .8em;
+    margin-top: 0;
     background-color: #352F2E;
     color: #ffffff;
     border-radius: 10px;
@@ -73,7 +91,48 @@ body {
 
 .project {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+}
+
+.project #title {
+    font-size: 2.5em;
+    text-shadow: 1.5px 1.5px white;
+}
+
+.plattsmapContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.plattsmapContainer div {
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 10px;
+    box-shadow: 5px 5px #332F2E;
+    width: 300px;
+    height: 300px;
+   
+}
+
+.plattsmapDescription {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin-left: 5px;
+}
+
+.plattsmapDescription a {
+    align-items: center;
+}
+
+.plattsmapDemo {
+    margin-right: 5px;
 }
 
 .about {
@@ -81,7 +140,25 @@ body {
     justify-content: center;
 }
 
+.about #title {
+    font-size: 2.5em;
+    text-shadow: 1.5px 1.5px white;
+}
+
 .contactMe {
     display: flex;
     justify-content: center;
+}
+
+.contactMe #title {
+    font-size: 2.5em;
+    text-shadow: 1.5px 1.5px white;
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 415px) {
+
 }
