@@ -1,5 +1,9 @@
 body {
     margin: 0;
+    background-image: url("../img/background.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
 }
 
 .navbar {
@@ -54,23 +58,24 @@ body {
 }
 
 .personalInfo {
-    padding: 25%; 
+    padding: 20%; 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    color: #ffffff;
     
 }
 
 .personalInfo h1 {
-    font-size: 3em;
-    text-shadow: 2px 2px white;
+    font-size: 4em;
+    text-shadow: 5px 4px #000000;
     margin-bottom: 20px;
 }
 
 .personalInfo h6 {
-    font-size: 1em;
-    text-shadow: 1px 1px white;
+    font-size: 2em;
+    text-shadow: 2px 2px #000000;
     margin: 0 0 20px;
 }
 
@@ -78,7 +83,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100px;
-    padding: .8em;
+    padding: 1em;
     margin-top: 0;
     background-color: #352F2E;
     color: #ffffff;
@@ -97,42 +102,48 @@ body {
 }
 
 .project #title {
-    font-size: 2.5em;
-    text-shadow: 1.5px 1.5px white;
+    color: #ffffff;
+    font-size: 3em;
+    text-shadow: 3px 3px #000000;
 }
 
-.plattsmapContainer {
+.container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-bottom: 85px;
 }
 
-.plattsmapContainer div {
+.container div {
     border: 2px solid #ffffff;
     border-radius: 10px;
     background-color: #ffffff;
     margin: 10px;
     box-shadow: 5px 5px #332F2E;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
    
 }
 
-.plattsmapDescription {
+.description {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
-    margin-left: 5px;
-}
-
-.plattsmapDescription a {
+    justify-content: start;
     align-items: center;
+    background-color: #ffffff;
+    margin: 5px;
 }
 
-.plattsmapDemo {
-    margin-right: 5px;
+.projectLink {
+    width: 100px;
+    padding: .8em;
+    margin: 10px 0 0;
+    background-color: #352F2E;
+    color: #ffffff;
+    border-radius: 10px;
+    
 }
 
 .about {
@@ -141,8 +152,9 @@ body {
 }
 
 .about #title {
-    font-size: 2.5em;
-    text-shadow: 1.5px 1.5px white;
+    color: #ffffff;
+    font-size: 3em;
+    text-shadow: 3px 3px #000000;
 }
 
 .contactMe {
@@ -151,8 +163,9 @@ body {
 }
 
 .contactMe #title {
-    font-size: 2.5em;
-    text-shadow: 1.5px 1.5px white;
+    color: #ffffff;
+    font-size: 3em;
+    text-shadow: 3px 3px #000000;
 }
 
 @media only screen and (max-width: 768px) {
