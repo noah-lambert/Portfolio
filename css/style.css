@@ -6,6 +6,8 @@ body {
     background-size: cover;
 }
 
+/* Navbar */
+
 .navbar {
     display: flex;
     margin: 0;
@@ -57,6 +59,8 @@ body {
     background-color: #ffffff;
 }
 
+/* Title Page */
+
 .personalInfo {
     padding: 20%; 
     display: flex;
@@ -94,6 +98,8 @@ body {
     background-color: #000000;
 }
 
+/* Project Page */
+
 .project {
     display: flex;
     flex-direction: column;
@@ -107,7 +113,7 @@ body {
     text-shadow: 3px 3px #000000;
 }
 
-.container {
+.projectContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -116,8 +122,7 @@ body {
     margin-bottom: 85px;
 }
 
-.container div {
-    border: 2px solid #ffffff;
+.projectContainer div {
     border-radius: 10px;
     background-color: #ffffff;
     margin: 10px;
@@ -136,7 +141,20 @@ body {
     margin: 5px;
 }
 
+.projectTitle {
+    font-size: 1.75em;
+}
+
+.projectDescription {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.25em;
+}
+
 .projectLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100px;
     padding: .8em;
     margin: 10px 0 0;
@@ -146,9 +164,13 @@ body {
     
 }
 
+/* About Me Page */
+
 .about {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 
 .about #title {
@@ -156,6 +178,37 @@ body {
     font-size: 3em;
     text-shadow: 3px 3px #000000;
 }
+
+.aboutContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 85px;
+}
+
+.aboutContainer div {
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 10px;
+    box-shadow: 5px 5px #332F2E;
+    width: 350px;
+    height: 500px;
+    margin: 10px;
+}
+
+#profileIMG {
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+#aboutMe p {
+    font-size: 1.25em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Contact Me Page */
 
 .contactMe {
     display: flex;
@@ -168,10 +221,12 @@ body {
     text-shadow: 3px 3px #000000;
 }
 
+/* Query for iPad */
 @media only screen and (max-width: 768px) {
     
 }
 
+/* Query for Mobile */
 @media only screen and (max-width: 415px) {
 
 }
