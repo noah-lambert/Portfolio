@@ -27,7 +27,7 @@ body {
 .external {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 10vh;
     margin-right: 10px;
@@ -42,6 +42,7 @@ body {
     margin: 5px;
     border-radius: 10px;
     text-decoration: none;
+    transition: background-color .4s ease;
 }
 
 .nav:hover {
@@ -54,17 +55,18 @@ body {
     border-radius: 100%;
     float: right;
     align-items: center;
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     background-color: #ffffff;
 }
 
 /* Title Page */
 
 .personalInfo {
-    padding: 20%; 
+    padding: 20% 0; 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     color: #ffffff;
@@ -78,7 +80,7 @@ body {
 }
 
 .personalInfo h6 {
-    font-size: 2em;
+    font-size: 1.85em;
     text-shadow: 2px 2px #000000;
     margin: 0 0 20px;
 }
@@ -93,6 +95,7 @@ body {
     color: #ffffff;
     border-radius: 10px;
     text-decoration: none;
+    transition: background-color .4s ease;
 }
 
 .resume:hover {
@@ -163,6 +166,7 @@ body {
     color: #ffffff;
     border-radius: 10px;
     text-decoration: none;
+    transition: background-color .4s ease;
 }
 
 .projectLink:hover {
@@ -199,13 +203,13 @@ body {
     margin: 10px;
     box-shadow: 5px 5px #332F2E;
     width: 350px;
-    height: 500px;
+    height: 475px;
     margin: 10px;
 }
 
 #profileIMG {
     width: 350px;
-    height: 500px;
+    height: 475px;
     border-radius: 10px;
 }
 
@@ -230,6 +234,11 @@ body {
     text-shadow: 3px 3px #000000;
 }
 
+.contactMe div {
+    background-color: rgb(0, 0, 0, 0.8);
+    
+}
+
 .contactForm {
     display: flex;
     flex-direction: column;
@@ -240,17 +249,22 @@ body {
 .contactForm input {
     width: 400px;
     height: 1.75em;
-    margin: 5px;
-    border-radius: 8px;
-    border: none;
+    margin: 10px 5px 5px;
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 .contactForm textarea {
     width: 400px;
     height: 175px;
     margin: 10px;
-    border-radius: 5px;
-    border: none;
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contactForm button {
@@ -259,24 +273,14 @@ body {
     justify-content: center;
     width: 100px;
     padding: .8em;
-    margin: 10px 0 0;
+    margin: 10px 0 10px;
     background-color: #352F2E;
     color: #ffffff;
     border-radius: 10px;
     border: none;
+    transition: background-color .4s ease;
 }
 
 .contactForm button:hover {
     background-color: #000000;
-}
-
-
-/* Query for iPad */
-@media only screen and (max-width: 768px) {
-    
-}
-
-/* Query for Mobile */
-@media only screen and (max-width: 415px) {
-
 }

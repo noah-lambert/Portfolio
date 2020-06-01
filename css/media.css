@@ -1,0 +1,66 @@
+/* Query for iPad */
+@media only screen and (max-width: 768px) {
+    .personalInfo {
+        width: 100vw;
+        padding: 40% 0;
+    }
+
+    .personalInfo h6 {
+        font-size: 1.25em;
+    }
+}
+
+/* Query for Mobile */
+@media only screen and (max-width: 415px) {
+
+    .personalInfo {
+        width: 100vw;
+        padding: 80% 8% 100%;
+    }
+
+    .personalInfo h1 {
+        font-size: 3.5em;
+    }
+
+    .personalInfo h6 {
+        font-size: 1.25em;
+    }
+
+    .project {
+        width: 100vw;
+        padding: 0 8%;
+    }
+
+    .projectContainer div {
+        width: 300px;
+        height: 450px;
+    }
+
+    .about {
+        width: 100vw;
+        padding: 0 8%;
+    }
+
+    .aboutContainer div {
+        width: 300px;
+        height: 500px;
+    }
+
+    #profileIMG {
+        width: 300px;
+        height: 500px;
+    }
+
+    .contactMe {
+        width: 100vw;
+        padding: 0 8%;
+    }
+
+    .contactForm input {
+        width: 300px;
+    }
+
+    .contactForm textarea {
+        width: 300px;
+    }
+}
