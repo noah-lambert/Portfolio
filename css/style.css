@@ -42,6 +42,7 @@ body {
     margin: 5px;
     border-radius: 10px;
     text-decoration: none;
+    transition: background-color .4s ease;
 }
 
 .nav:hover {
@@ -62,9 +63,10 @@ body {
 /* Title Page */
 
 .personalInfo {
-    padding: 20%; 
+    padding: 20% 0; 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     color: #ffffff;
@@ -93,6 +95,7 @@ body {
     color: #ffffff;
     border-radius: 10px;
     text-decoration: none;
+    transition: background-color .4s ease;
 }
 
 .resume:hover {
@@ -163,6 +166,7 @@ body {
     color: #ffffff;
     border-radius: 10px;
     text-decoration: none;
+    transition: background-color .4s ease;
 }
 
 .projectLink:hover {
@@ -274,25 +278,9 @@ body {
     color: #ffffff;
     border-radius: 10px;
     border: none;
+    transition: background-color .4s ease;
 }
 
 .contactForm button:hover {
     background-color: #000000;
-}
-
-
-/* Query for iPad */
-@media only screen and (max-width: 768px) {
-    .personalInfo {
-        padding: 40%;
-    }
-
-    .personalInfo h6 {
-        font-size: 1.25em;
-    }
-}
-
-/* Query for Mobile */
-@media only screen and (max-width: 415px) {
-
 }
