@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, intital-scale=1.0">
+        <meta name="viewport" content="width=device-width">
         <title>Noah Lambert</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -77,13 +77,14 @@
 
             <div class="contactMe">
                 <h1 id="title">Contact Me</h1>
-                <form class="contactForm" name="contactForm" method="post" data-netlify="true">
-                    <input type="text" name="name" placeholder="Full Name">
-                    <input type="text" name="email" placeholder="Email Address">
-                    <textarea name="message" placeholder="Your message here..."></textarea>
-                    <div data-netlify-recaptcha="true"></div>
-                    <button>Send</button>
-                </form>
+                <div class="contactContainer">
+                    <form class="contactForm" name="contactForm" method="post" data-netlify="true" netlify-honeypot="bot-feild">
+                        <input type="text" name="name" placeholder="Full Name">
+                        <input type="text" name="email" placeholder="Email Address">
+                        <textarea name="message" placeholder="Your message here..."></textarea>
+                        <button>Send</button>
+                    </form>
+                </div>
             </div>
         </div>
     </body>
