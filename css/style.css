@@ -92,6 +92,7 @@ body {
     background-color: #352F2E;
     color: #ffffff;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 .resume:hover {
@@ -161,7 +162,11 @@ body {
     background-color: #352F2E;
     color: #ffffff;
     border-radius: 10px;
-    
+    text-decoration: none;
+}
+
+.projectLink:hover {
+    background-color: #000000;
 }
 
 /* About Me Page */
@@ -219,16 +224,52 @@ body {
     margin-bottom: 100px;
 }
 
-.contactForm {
-    display: flex;
-    flex-direction: column;
-}
-
 .contactMe #title {
     color: #ffffff;
     font-size: 3em;
     text-shadow: 3px 3px #000000;
 }
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactForm input {
+    width: 400px;
+    height: 1.75em;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+.contactForm textarea {
+    width: 400px;
+    height: 175px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contactForm button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100px;
+    padding: .8em;
+    margin: 10px 0 0;
+    background-color: #352F2E;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+}
+
+.contactForm button:hover {
+    background-color: #000000;
+}
+
 
 /* Query for iPad */
 @media only screen and (max-width: 768px) {
