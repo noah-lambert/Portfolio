@@ -78,7 +78,7 @@ body {
 }
 
 .personalInfo h6 {
-    font-size: 2em;
+    font-size: 1.85em;
     text-shadow: 2px 2px #000000;
     margin: 0 0 20px;
 }
@@ -199,13 +199,13 @@ body {
     margin: 10px;
     box-shadow: 5px 5px #332F2E;
     width: 350px;
-    height: 500px;
+    height: 475px;
     margin: 10px;
 }
 
 #profileIMG {
     width: 350px;
-    height: 500px;
+    height: 475px;
     border-radius: 10px;
 }
 
@@ -230,6 +230,11 @@ body {
     text-shadow: 3px 3px #000000;
 }
 
+.contactMe div {
+    background-color: rgb(0, 0, 0, 0.8);
+    
+}
+
 .contactForm {
     display: flex;
     flex-direction: column;
@@ -240,17 +245,22 @@ body {
 .contactForm input {
     width: 400px;
     height: 1.75em;
-    margin: 5px;
-    border-radius: 8px;
-    border: none;
+    margin: 10px 5px 5px;
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 .contactForm textarea {
     width: 400px;
     height: 175px;
     margin: 10px;
-    border-radius: 5px;
-    border: none;
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contactForm button {
@@ -259,7 +269,7 @@ body {
     justify-content: center;
     width: 100px;
     padding: .8em;
-    margin: 10px 0 0;
+    margin: 10px 0 10px;
     background-color: #352F2E;
     color: #ffffff;
     border-radius: 10px;
