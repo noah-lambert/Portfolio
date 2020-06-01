@@ -183,6 +183,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 85px;
 }
 
