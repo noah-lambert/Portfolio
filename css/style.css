@@ -27,7 +27,7 @@ body {
 .external {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 10vh;
     margin-right: 10px;
@@ -54,8 +54,8 @@ body {
     border-radius: 100%;
     float: right;
     align-items: center;
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     background-color: #ffffff;
 }
 
@@ -283,7 +283,13 @@ body {
 
 /* Query for iPad */
 @media only screen and (max-width: 768px) {
-    
+    .personalInfo {
+        padding: 40%;
+    }
+
+    .personalInfo h6 {
+        font-size: 1.25em;
+    }
 }
 
 /* Query for Mobile */
