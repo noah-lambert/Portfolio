@@ -3,7 +3,19 @@ body {
     background-image: url("../img/background.jpg");
     background-attachment: fixed;
     background-position: center center;
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+.fullPage {
+    background-color: rgba(93, 109, 126, 0.75);
+    padding: 0 0 85px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 /* Navbar */
@@ -51,7 +63,7 @@ body {
 
 .link {
     padding: 1px;
-    margin: 5px;
+    margin-right: 15px;
     border-radius: 100%;
     float: right;
     align-items: center;
