@@ -13,13 +13,12 @@
 /* Query for Mobile */
 @media only screen and (max-width: 414px) {
 
-    body {
-        background-image: url("../img/background.jpg");
+    .navbar {
+        width: 100%;
     }
-
     .personalInfo {
-        width: 100vw;
-        padding: 80% 8% 100%;
+        width: 100%;
+        padding: 50% 0 80%;
     }
 
     .personalInfo h1 {
@@ -31,8 +30,7 @@
     }
 
     .project {
-        width: 100vw;
-        padding: 0 8%;
+        width: 100%;
     }
 
     .projectContainer div {
@@ -41,8 +39,8 @@
     }
 
     .about {
-        width: 100vw;
-        padding: 0 8%;
+        width: 100%;
+        
     }
 
     .aboutContainer div {
@@ -56,15 +54,14 @@
     }
 
     .contactMe {
-        width: 100vw;
-        padding: 0 8%;
+        width: 100%;
     }
 
     .contactForm input {
-        width: 300px;
+        width: 280px;
     }
 
     .contactForm textarea {
-        width: 300px;
+        width: 280px;
     }
 }
