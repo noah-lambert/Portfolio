@@ -13,9 +13,21 @@
 /* Query for Mobile */
 @media only screen and (max-width: 414px) {
 
-    .navbar {
-        width: 100%;
+    .nav {
+        font-size: .75em;
+        padding: 10px;
     }
+
+    .external {
+        margin-right: 0;
+    }
+
+    .link {
+        margin-right: 5px;
+        height: 20px;
+        width: 20px;
+    }
+
     .personalInfo {
         width: 100%;
         padding: 50% 0 80%;
@@ -27,6 +39,7 @@
 
     .personalInfo h6 {
         font-size: 1.25em;
+        width: 90%;
     }
 
     .project {
