@@ -151,8 +151,7 @@ body {
     margin: 10px;
     box-shadow: 5px 5px #332F2E;
     width: 400px;
-    height: contain;
-   
+    height: 400px;
 }
 
 .description {
@@ -168,28 +167,41 @@ body {
     font-size: 1.75em;
 }
 
+.projectLink {
+    text-decoration: none;
+}
+
 .projectDescription {
     margin-left: 12px;
     margin-right: 12px;
     font-size: 1.25em;
 }
 
-.projectLink {
+.read-more {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100px;
     padding: .8em;
-    margin: 10px 0 10px;
+    margin: 28px;
     background-color: #352F2E;
     color: #ffffff;
+    border: none;
     border-radius: 10px;
     text-decoration: none;
     transition: background-color .4s ease;
 }
 
-.projectLink:hover {
+.read-more:hover {
     background-color: #000000;
+}
+
+#plattsmap-more {
+    display: none;
+}
+
+#club-hub-more {
+    display: none;
 }
 
 .demo {
