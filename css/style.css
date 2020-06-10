@@ -32,7 +32,7 @@ body {
     top: 0;
     width: 100%;
     text-align: center;
-    background-color: #352F2E;
+    background-color: rgb(33, 47, 61);
     position: fixed;
     justify-content: space-between;
 }
@@ -54,7 +54,7 @@ body {
 .nav {
     display: flex;
     justify-content: center;
-    color: #ffffff;
+    color: #EAECEE;
     text-align: center;
     padding: 15px;
     margin: 5px;
@@ -64,7 +64,7 @@ body {
 }
 
 .nav:hover {
-    background-color: #000000;
+    background-color: #424949;
 }
 
 .link {
@@ -75,7 +75,7 @@ body {
     align-items: center;
     height: 30px;
     width: 30px;
-    background-color: #ffffff;
+    background-color: #EAECEE;
 }
 
 /* Title Page */
@@ -87,7 +87,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #ffffff;
+    color: #EAECEE;
     
 }
 
@@ -109,15 +109,15 @@ body {
     width: 100px;
     padding: 1em;
     margin-top: 0;
-    background-color: #352F2E;
-    color: #ffffff;
+    background-color: rgb(33, 47, 61);
+    color: #EAECEE;
     border-radius: 10px;
     text-decoration: none;
     transition: background-color .4s ease;
 }
 
 .resume:hover {
-    background-color: #000000;
+    background-color: #424949;
 }
 
 /* Project Page */
@@ -131,7 +131,7 @@ body {
 }
 
 .project #title {
-    color: #ffffff;
+    color: #EAECEE;
     font-size: 3em;
     text-shadow: 3px 3px #000000;
 }
@@ -147,9 +147,9 @@ body {
 
 .projectContainer div {
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: rgba(33, 47, 61, 0.8);
     margin: 10px;
-    box-shadow: 5px 5px #332F2E;
+    box-shadow: 5px 5px #424949;
     width: 400px;
     height: 400px;
 }
@@ -159,21 +159,33 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-color: #ffffff;
+    color: #EAECEE;
     margin: 5px;
 }
 
 .projectTitle {
     font-size: 1.75em;
+    padding: 5px;
+    border-radius: 10px;
+    color: #EAECEE;
+    transition: background-color ease 0.4s;
+}
+
+.projectTitle:hover {
+    background-color: #EAECEE;
+    color: rgb(33, 47, 61);
+    border-radius: 10px;
 }
 
 .projectLink {
+    color: #000000;
     text-decoration: none;
 }
 
 .projectDescription {
     margin-left: 12px;
     margin-right: 12px;
+    margin-top: 0;
     font-size: 1.25em;
 }
 
@@ -184,8 +196,8 @@ body {
     width: 100px;
     padding: .8em;
     margin: 28px;
-    background-color: #352F2E;
-    color: #ffffff;
+    background-color: #424949;
+    color: #EAECEE;
     border: none;
     border-radius: 10px;
     text-decoration: none;
@@ -208,6 +220,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
+    color: #EAECEE;
 }
 
 /* About Me Page */
@@ -221,7 +234,7 @@ body {
 }
 
 .about #title {
-    color: #ffffff;
+    color: #EAECEE;
     font-size: 3em;
     text-shadow: 3px 3px #000000;
 }
@@ -237,9 +250,10 @@ body {
 
 .aboutContainer div {
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: rgba(33, 47, 61, 0.8);
+    color: #EAECEE;
     margin: 10px;
-    box-shadow: 5px 5px #332F2E;
+    box-shadow: 5px 5px #424949;
     width: 350px;
     height: 475px;
     margin: 10px;
@@ -255,6 +269,7 @@ body {
     font-size: 1.25em;
     margin-left: 10px;
     margin-right: 10px;
+
 }
 
 /* Contact Me Page */
@@ -268,14 +283,13 @@ body {
 }
 
 .contactMe #title {
-    color: #ffffff;
+    color: #EAECEE;
     font-size: 3em;
     text-shadow: 3px 3px #000000;
 }
 
 .contactMe div {
-    background-color: rgb(0, 0, 0, 0.8);
-    
+    background-color: rgba(33, 47, 61, 0.8);
 }
 
 .contactForm {
@@ -290,9 +304,9 @@ body {
     height: 1.75em;
     margin: 10px 5px 5px;
     border: 0;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #EAECEE;
     background-color: transparent;
-    color: #ffffff;
+    color: #EAECEE;
 }
 
 .contactForm textarea {
@@ -300,9 +314,9 @@ body {
     height: 175px;
     margin: 10px;
     border: 0;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #EAECEE;
     background-color: transparent;
-    color: #ffffff;
+    color: #EAECEE;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -313,8 +327,8 @@ body {
     width: 100px;
     padding: .8em;
     margin: 10px 0 10px;
-    background-color: #352F2E;
-    color: #ffffff;
+    background-color: #424949;
+    color: #EAECEE;
     border-radius: 10px;
     border: none;
     transition: background-color .4s ease;
