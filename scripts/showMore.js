@@ -10,7 +10,7 @@ function showMore1() {
       btnText.innerHTML = "Read more";
       moreText.style.display = "none";
       if (mediaQ.matches) {
-        container.style.height = "475px";
+        container.style.height = "425px";
       } else {
         container.style.height = "400px";
       }
@@ -35,7 +35,7 @@ function showMore1() {
       btnText.innerHTML = "Read more";
       moreText.style.display = "none";
       if (mediaQ.matches) {
-        container.style.height = "475px";
+        container.style.height = "425px";
       } else {
         container.style.height = "400px";
       }
