@@ -3,12 +3,18 @@ function showMore1() {
     var moreText = document.getElementById("plattsmap-more");
     var btnText = document.getElementById("read-more-plattsmap");
     var container = document.getElementById("plattsmap-description")
+    var mediaQ = window.matchMedia("(max-width: 414px)")
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
       btnText.innerHTML = "Read more";
       moreText.style.display = "none";
-      container.style.height = "400px";
+      if (mediaQ.matches) {
+        container.style.height = "475px";
+      } else {
+        container.style.height = "400px";
+      }
+      
     } else {
       dots.style.display = "none";
       btnText.innerHTML = "Read less";
@@ -22,12 +28,17 @@ function showMore1() {
     var moreText = document.getElementById("club-hub-more");
     var btnText = document.getElementById("read-more-club-hub");
     var container = document.getElementById("club-hub-description")
-  
+    var mediaQ = window.matchMedia("(max-width: 414px)")
+
     if (dots.style.display === "none") {
       dots.style.display = "inline";
       btnText.innerHTML = "Read more";
       moreText.style.display = "none";
-      container.style.height = "400px";
+      if (mediaQ.matches) {
+        container.style.height = "475px";
+      } else {
+        container.style.height = "400px";
+      }
     } else {
       dots.style.display = "none";
       btnText.innerHTML = "Read less";
