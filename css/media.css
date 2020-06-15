@@ -48,22 +48,21 @@
 
     .projectContainer div {
         width: 300px;
-        height: 475px;
+        height: 425px;
     }
 
     .about {
         width: 100%;
-        
     }
 
     .aboutContainer div {
-        width: 300px;
-        height: 500px;
+        width: 280px;
+        height: 450px;
     }
 
     #profileIMG {
         width: 300px;
-        height: 500px;
+        height: 450px;
     }
 
     .contactMe {
