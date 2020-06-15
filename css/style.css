@@ -38,10 +38,6 @@ body {
     justify-content: flex-start;
 }
 
-.internal:active {
-    background-color: rgb(17, 17, 34);
-}
-
 .external {
     display: flex;
     flex-direction: row-reverse;
@@ -159,8 +155,9 @@ body {
 .description {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    text-align: center;
     align-items: center;
+    justify-content: space-evenly;
     color: #EAECEE;
     margin: 5px;
 }
@@ -187,21 +184,22 @@ body {
 .projectDescription {
     margin: 0 12px 0;
     font-size: 1.25em;
+    text-align: left;
 }
 
 .read-more {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: table-cell;
+    vertical-align: bottom;
     width: 100px;
     padding: .8em;
-    margin: 20px;
+    margin: 15px;
     background-color: rgb(17, 17, 34);
     color: #EAECEE;
     border: none;
     border-radius: 10px;
     text-decoration: none;
     transition: background-color .4s ease;
+    outline: none;
 }
 
 .read-more:hover {
