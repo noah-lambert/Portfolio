@@ -31,6 +31,7 @@ body {
     background-color: rgb(17, 17, 34);
     position: fixed;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .internal {
@@ -56,7 +57,7 @@ body {
     margin: 5px;
     border-radius: 10px;
     text-decoration: none;
-    transition: background-color .4s ease;
+    transition: background-color .4s ease-in-out;
 }
 
 .nav:hover {
@@ -112,7 +113,7 @@ body {
     color: #EAECEE;
     border-radius: 10px;
     text-decoration: none;
-    transition: background-color .4s ease;
+    transition: background-color .4s ease-in-out;
 }
 
 .resume:hover {
@@ -133,6 +134,7 @@ body {
     color: #EAECEE;
     font-size: 3em;
     text-shadow: 3px 3px #000000;
+    height: auto;
 }
 
 .projectContainer {
@@ -149,7 +151,7 @@ body {
     background-color: rgba(33, 47, 61, 0.8);
     margin: 10px;
     width: 400px;
-    height: 400px;
+    height: 350px;
 }
 
 .description {
@@ -167,18 +169,6 @@ body {
     padding: 5px;
     border-radius: 10px;
     color: #EAECEE;
-    transition: background-color ease 0.4s;
-}
-
-.projectTitle:hover {
-    background-color: #EAECEE;
-    color: rgb(33, 47, 61);
-    border-radius: 10px;
-}
-
-.projectLink {
-    color: #000000;
-    text-decoration: none;
 }
 
 .projectDescription {
@@ -188,18 +178,17 @@ body {
 }
 
 .read-more {
-    display: table-cell;
-    vertical-align: bottom;
     width: 100px;
     padding: .8em;
-    margin: 15px;
+    font-size: 15px;
     background-color: rgb(17, 17, 34);
     color: #EAECEE;
     border: none;
     border-radius: 10px;
     text-decoration: none;
-    transition: background-color .4s ease;
+    transition: background-color .4s ease-in-out;
     outline: none;
+    margin: 15px;
 }
 
 .read-more:hover {
@@ -216,9 +205,38 @@ body {
 
 .demo {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
     color: #EAECEE;
+}
+
+.demo .slideshow {
+    width: 95%;
+    height: 70%;
+    border: 2px solid #EAECEE;
+}
+
+.projectLink {
+    background-color: rgb(17, 17, 34);
+    position: absolute;
+    color: #EAECEE;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .8em;
+    margin: 0;
+    margin-bottom: 15px;
+    width: 80px;
+    border-radius: 10px;
+    bottom: 0;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.projectLink:hover {
+    background-color: #424949;
 }
 
 /* About Me Page */
