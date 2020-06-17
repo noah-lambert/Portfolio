@@ -12,7 +12,7 @@ function showMore1() {
       if (mediaQ.matches) {
         container.style.height = "425px";
       } else {
-        container.style.height = "400px";
+        container.style.height = "350px";
       }
       
     } else {
@@ -37,7 +37,7 @@ function showMore1() {
       if (mediaQ.matches) {
         container.style.height = "425px";
       } else {
-        container.style.height = "400px";
+        container.style.height = "350px";
       }
     } else {
       dots.style.display = "none";
