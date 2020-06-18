@@ -7,7 +7,7 @@ function showMore1() {
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
+      btnText.innerHTML = "Read More";
       moreText.style.display = "none";
       if (mediaQ.matches) {
         container.style.height = "425px";
@@ -17,7 +17,7 @@ function showMore1() {
       
     } else {
       dots.style.display = "none";
-      btnText.innerHTML = "Read less";
+      btnText.innerHTML = "Read Less";
       moreText.style.display = "inline";
       container.style.height = "auto"
     }
@@ -32,7 +32,7 @@ function showMore1() {
 
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
+      btnText.innerHTML = "Read More";
       moreText.style.display = "none";
       if (mediaQ.matches) {
         container.style.height = "425px";
@@ -41,7 +41,7 @@ function showMore1() {
       }
     } else {
       dots.style.display = "none";
-      btnText.innerHTML = "Read less";
+      btnText.innerHTML = "Read Less";
       moreText.style.display = "inline";
       container.style.height = "auto"
     }
