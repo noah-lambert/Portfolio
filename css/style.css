@@ -267,12 +267,18 @@ body {
 
 .profilePic,  .aboutMe{
     border-radius: 10px;
+    border: none;
     background-color: rgba(33, 47, 61, 0.8);
     color: #EAECEE;
     width: 280px;
     height: 390px;
     margin: 10px;
     padding: 5px 10px 5px 10px;
+}
+
+#profileIMG {
+    width: 100px;
+    height: 100px;
 }
 
 .aboutContainer p {
@@ -348,6 +354,18 @@ body {
     border-radius: 10px;
     border: none;
     transition: background-color .4s ease;
+}
+
+.contactForm::placeholder {
+    color: #424949;
+}
+
+.contactForm:-ms-input-placeholder {
+    color: #424949;
+}
+
+.contactForm::-ms-input-placeholder {
+    color: #424949;
 }
 
 .contactForm button:hover {
