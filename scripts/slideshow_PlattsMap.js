@@ -12,14 +12,26 @@ const setSlidePosition = (slide, index) => {
 };
 slides.forEach(setSlidePosition);
 
+const moveSlide = (carousel, currentSlide, targetSlide) => {
+    carousel.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+    currentSlide.classList.remove('current-slide');
+    targetSlide.classList.add('current-slide');
+}
+ 
 //move images to the right
 if(nextBtn){
     nextBtn.addEventListener('click', e => {
         const currentSlide = carousel.querySelector('.current-slide');
         const nextSlide = currentSlide.nextElementSibling;
-        const distToMove = nextSlide.style.left;
-    
-        //move to the next image 
-        carousel.style.transform = 'translateX(-' + distToMove + ')';
+        moveSlide(carousel, currentSlide, nextSlide);
+    });
+}
+
+//move images to the left
+if(prevBtn) {
+    prevBtn.addEventListener('click', e => {
+        const currentSlide = carousel.querySelector('.current-slide');
+        const prevSlide = currentSlide.previousElementSibling;
+        moveSlide(carousel, currentSlide, prevSlide);
     });
 }
