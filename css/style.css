@@ -238,20 +238,29 @@ body {
 
 .carousel {
     list-style: none;
+    height: 100%;
+    position: relative;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide {
+    position: relative;
 }
 
 .carousel-container img {
+    position: absolute;
     height: 100%;
     width: 100%;
-    position: absolute;
     top: 0;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    margin: 0 auto;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-#nextBtn, #prevBtn {
+.nextBtn, .prevBtn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -261,11 +270,11 @@ body {
     border: none;
 }
 
-#nextBtn {
+.nextBtn {
     right: 0;
 }
 
-#prevBtn {
+.prevBtn {
     left: 0;
 }
 
