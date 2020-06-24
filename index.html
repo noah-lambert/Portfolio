@@ -50,7 +50,7 @@
                     <div class="slideshow">
                         <div class="carousel-container" id="carousel-container-plattsmap">
                             <ul class="carousel" id="carousel-plattsmap">
-                                <li class="carousel-slide current-slide" ><img src="" alt="img1" class="slideImg"></li>
+                                <li class="carousel-slide current-slide"><img src="" alt="img1" class="slideImg"></li>
                                 <li class="carousel-slide"><img src="" alt="img2" class="slideImg"></li>
                                 <li class="carousel-slide"><img src="" alt="img3" class="slideImg"></li>
                                 <li class="carousel-slide"><img src="" alt="img4" class="slideImg"></li>
@@ -76,17 +76,18 @@
                 </div>
                 <div class="demo" id="blackjack">
                     <div class="slideshow">
-                        <div class="carousel-container">
-                            <ul class="carousel">
-                                <li><img src="" alt="img1" class="slideImg"></li>
-                                <li><img src="" alt="img2" class="slideImg"></li>
-                                <li><img src="" alt="img3" class="slideImg"></li>
-                                <li><img src="" alt="img4" class="slideImg"></li>
-                                <li><img src="" alt="img5" class="slideImg"></li>
+                        <div class="carousel-container" id="carousel-container-blackjack">
+                            <ul class="carousel" id="carousel-blackjack">
+                                <li><img class="carousel-slide current-slide" src="" alt="img1" class="slideImg"></li>
+                                <li><img class="carousel-slide" src="" alt="img2" class="slideImg"></li>
+                                <li><img class="carousel-slide" src="" alt="img2" class="slideImg"></li>
+                                <li><img class="carousel-slide" src="" alt="img3" class="slideImg"></li>
+                                <li><img class="carousel-slide" src="" alt="img4" class="slideImg"></li>
+                                <li><img class="carousel-slide" src="" alt="img5" class="slideImg"></li>
                             </ul>
                         </div>
-                        <button class="prevBtn"><img class="navBtn" src="img/prev_arrow.svg" alt=""></button>
-                        <button class="nextBtn"><img class="navBtn" src="img/next_arrow.svg" alt=""></button>
+                        <button class="prevBtn" id="prev-blackjack"><img class="navBtn" src="img/prev_arrow.svg" alt=""></button>
+                        <button class="nextBtn" id="next-blackjack"><img class="navBtn" src="img/next_arrow.svg" alt=""></button>
                     </div>
                     <a href="https://github.com/noah-lambert/Console_Backjack" target="_blank" class="projectLink" target="_blank">View Code</a>
                 </div>
@@ -104,18 +105,8 @@
                     <button class="read-more" id="read-more-club-hub" onclick="showMore2()">Read More</button>
                 </div> 
                 <div class="demo" id="clubhub">
-                    <div class="slideshow">
-                        <div class="carousel-container">
-                            <ul class="carousel">
-                                <li><img src="" alt="img1" class="slideImg"></li>
-                                <li><img src="" alt="img2" class="slideImg"></li>
-                                <li><img src="" alt="img3" class="slideImg"></li>
-                                <li><img src="" alt="img4" class="slideImg"></li>
-                                <li><img src="" alt="img5" class="slideImg"></li>
-                            </ul>
-                        </div>
-                        <button id="prevBtn"><img class="navBtn" src="img/prev_arrow.svg" alt=""></button>
-                        <button id="nextBtn"><img class="navBtn" src="img/next_arrow.svg" alt=""></button>
+                    <div class="slideshow" id="slideshow-clubhub">
+                        *Pictures Unavailable At This Time*
                     </div>
                     <a href="https://github.com/noah-lambert/club-hub" target="_blank" class="projectLink" target="_blank">View Code</a>
                 </div>
@@ -152,6 +143,7 @@
     </div>
     <script src="scripts/showMore.js"></script>
     <script src="scripts/slideshow_PlattsMap.js"></script>
+    <script src="scripts/slideshow_Blackjack.js"></script>
     </body>
 
 </html>

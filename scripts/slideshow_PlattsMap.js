@@ -1,37 +1,37 @@
-const carousel = document.querySelector('#carousel-plattsmap');
-const slides = Array.from(carousel.children);
-const nextBtn = document.querySelector('#next-plattsmap');
-const prevBtn = document.querySelector('#prev-plattsmap');
+const carousel1 = document.querySelector('#carousel-plattsmap');
+const slides1 = Array.from(carousel1.children);
+const nextBtn1 = document.querySelector('#next-plattsmap');
+const prevBtn1 = document.querySelector('#prev-plattsmap');
 
 
-const slideWidth = slides[0].getBoundingClientRect().width;
+const slideWidth1 = slides1[0].getBoundingClientRect().width;
 
 //set the images next to one another
-const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
+const setSlidePosition1 = (slide, index) => {
+    slide.style.left = slideWidth1 * index + 'px';
 };
-slides.forEach(setSlidePosition);
+slides1.forEach(setSlidePosition1);
 
-const moveSlide = (carousel, currentSlide, targetSlide) => {
-    carousel.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+const moveSlide1 = (carousel1, currentSlide, targetSlide) => {
+    carousel1.style.transform = 'translateX(-' + targetSlide.style.left + ')';
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
 }
  
 //move images to the right
-if(nextBtn){
-    nextBtn.addEventListener('click', e => {
-        const currentSlide = carousel.querySelector('.current-slide');
+if(nextBtn1){
+    nextBtn1.addEventListener('click', e => {
+        const currentSlide = carousel1.querySelector('.current-slide');
         const nextSlide = currentSlide.nextElementSibling;
-        moveSlide(carousel, currentSlide, nextSlide);
+        moveSlide1(carousel1, currentSlide, nextSlide);
     });
-}
+} 
 
 //move images to the left
-if(prevBtn) {
-    prevBtn.addEventListener('click', e => {
-        const currentSlide = carousel.querySelector('.current-slide');
+if(prevBtn1) {
+    prevBtn1.addEventListener('click', e => {
+        const currentSlide = carousel1.querySelector('.current-slide');
         const prevSlide = currentSlide.previousElementSibling;
-        moveSlide(carousel, currentSlide, prevSlide);
+        moveSlide1(carousel1, currentSlide, prevSlide);
     });
-}
+} 
