@@ -204,6 +204,8 @@ body {
     display: none;
 }
 
+/* Project Demos */
+
 .demo {
     display: flex;
     flex-direction: column;
@@ -214,9 +216,71 @@ body {
 }
 
 .demo .slideshow {
+    position: relative;
+    align-items: center;
     width: 95%;
-    height: 70%;
+    height: 75%;
+    border: 2px solid #EAECEE;;
+}
+
+.demo .carousel-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    height: 99%;
+    margin: 0;
+    padding: 0;
     border: 2px solid #EAECEE;
+    overflow: hidden;
+}
+
+.carousel {
+    list-style: none;
+    height: 100%;
+    position: relative;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide {
+    position: relative;
+}
+
+.carousel-container img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.nextBtn, .prevBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.nextBtn {
+    right: 0;
+}
+
+.prevBtn {
+    left: 0;
+}
+
+.navBtn {
+    width: 15px;
 }
 
 .projectLink {
@@ -238,6 +302,10 @@ body {
 
 .projectLink:hover {
     background-color: #424949;
+}
+
+#slideshow-clubhub {
+    text-align: center;
 }
 
 /* About Me Page */
