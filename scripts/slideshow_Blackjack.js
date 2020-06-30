@@ -10,9 +10,12 @@ const slideWidth = slides[0].getBoundingClientRect().width;
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
 };
+console.log(slides);
 slides.forEach(setSlidePosition);
+console.log(slides[1]);
 
 const moveSlide = (carousel, currentSlide, targetSlide) => {
+    console.log(targetSlide);
     carousel.style.transform = 'translateX(-' + targetSlide.style.left + ')';
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
@@ -23,6 +26,7 @@ if(nextBtn){
     nextBtn.addEventListener('click', e => {
         const currentSlide = carousel.querySelector('.current-slide');
         const nextSlide = currentSlide.nextElementSibling;
+        console.log(nextSlide);
         moveSlide(carousel, currentSlide, nextSlide);
     });
 } 

@@ -18,20 +18,37 @@ const moveSlide1 = (carousel1, currentSlide, targetSlide) => {
     targetSlide.classList.add('current-slide');
 }
  
+const hideArrows1 = (slides1 ,prevBtn1, nextBtn1, targetIndex) => {
+    if(targetIndex === 0) {
+        prevBtn1.classList.add('is-hidden');
+        nextBtn1.classList.remove('is-hidden');
+    } else if(targetIndex === slides1.length - 1) {
+        prevBtn1.classList.remove('is-hidden');
+        nextBtn1.classList.add('is-hidden');
+    } else {
+        prevBtn1.classList.remove('is-hidden');
+        nextBtn1.classList.remove('is-hidden');
+    }
+}
+
 //move images to the right
 if(nextBtn1){
     nextBtn1.addEventListener('click', e => {
-        const currentSlide = carousel1.querySelector('.current-slide');
-        const nextSlide = currentSlide.nextElementSibling;
-        moveSlide1(carousel1, currentSlide, nextSlide);
+        const currentSlide1 = carousel1.querySelector('.current-slide');
+        const nextSlide1 = currentSlide1.nextElementSibling;
+        const targetIndex1 = slides1.findIndex(slide => slide === nextSlide1);
+        moveSlide1(carousel1, currentSlide1, nextSlide1);
+        hideArrows1(slides1 ,prevBtn1, nextBtn1, targetIndex1);
     });
 } 
 
 //move images to the left
 if(prevBtn1) {
     prevBtn1.addEventListener('click', e => {
-        const currentSlide = carousel1.querySelector('.current-slide');
-        const prevSlide = currentSlide.previousElementSibling;
-        moveSlide1(carousel1, currentSlide, prevSlide);
+        const currentSlide1 = carousel1.querySelector('.current-slide');
+        const prevSlide1 = currentSlide1.previousElementSibling;
+        const targetIndex1 = slides1.findIndex(slide => slide === prevSlide1);
+        moveSlide1(carousel1, currentSlide1, prevSlide1);
+        hideArrows1(slides1 ,prevBtn1, nextBtn1, targetIndex1);
     });
 } 

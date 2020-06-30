@@ -279,6 +279,10 @@ body {
     left: 0;
 }
 
+.is-hidden {
+    display: none;
+}
+
 .navBtn {
     width: 15px;
 }
