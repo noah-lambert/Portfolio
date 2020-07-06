@@ -50,15 +50,15 @@
                     <div class="slideshow">
                         <div class="carousel-container" id="carousel-container-plattsmap">
                             <ul class="carousel" id="carousel-plattsmap">
-                                <li class="carousel-slide current-slide"><img src="" alt="img1" class="slideImg"></li>
-                                <li class="carousel-slide"><img src="" alt="img2" class="slideImg"></li>
-                                <li class="carousel-slide"><img src="" alt="img3" class="slideImg"></li>
-                                <li class="carousel-slide"><img src="" alt="img4" class="slideImg"></li>
-                                <li class="carousel-slide"><img src="" alt="img5" class="slideImg"></li>
+                                <li class="carousel-slide-plattsmap"><img src="" alt="img1" class="slideImg"></li>
+                                <li class="carousel-slide-plattsmap"><img src="" alt="img2" class="slideImg"></li>
+                                <li class="carousel-slide-plattsmap"><img src="" alt="img3" class="slideImg"></li>
+                                <li class="carousel-slide-plattsmap"><img src="" alt="img4" class="slideImg"></li>
+                                <li class="carousel-slide-plattsmap"><img src="" alt="img5" class="slideImg"></li>
                             </ul>
                         </div>
-                        <button class="prevBtn is-hidden" id="prev-plattsmap"><img class="navBtn" src="img/prev_arrow.svg" alt=""></button>
-                        <button class="nextBtn" id="next-plattsmap"><img class="navBtn" src="img/next_arrow.svg" alt=""></button>
+                        <button class="prevBtn" id="prev-plattsmap"><img class="navBtn" src="img/prev_arrow.svg" alt="" onclick="plus_slides_plattsmap(-1)"></button>
+                        <button class="nextBtn" id="next-plattsmap"><img class="navBtn" src="img/next_arrow.svg" alt="" onclick="plus_slides_plattsmap(1)"></button>
                     </div>
                     
                     <a href="https://github.com/noah-lambert/PlattsMap5" class="projectLink" target="_blank">View Code</a>
@@ -78,16 +78,16 @@
                     <div class="slideshow">
                         <div class="carousel-container" id="carousel-container-blackjack">
                             <ul class="carousel" id="carousel-blackjack">
-                                <li><img class="carousel-slide current-slide" src="" alt="img1" class="slideImg"></li>
-                                <li><img class="carousel-slide" src="" alt="img2" class="slideImg"></li>
-                                <li><img class="carousel-slide" src="" alt="img2" class="slideImg"></li>
-                                <li><img class="carousel-slide" src="" alt="img3" class="slideImg"></li>
-                                <li><img class="carousel-slide" src="" alt="img4" class="slideImg"></li>
-                                <li><img class="carousel-slide" src="" alt="img5" class="slideImg"></li>
+                                <li><img class="carousel-slide-blackjack" src="" alt="img1" class="slideImg"></li>
+                                <li><img class="carousel-slide-blackjack" src="" alt="img2" class="slideImg"></li>
+                                <li><img class="carousel-slide-blackjack" src="" alt="img2" class="slideImg"></li>
+                                <li><img class="carousel-slide-blackjack" src="" alt="img3" class="slideImg"></li>
+                                <li><img class="carousel-slide-blackjack" src="" alt="img4" class="slideImg"></li>
+                                <li><img class="carousel-slide-blackjack" src="" alt="img5" class="slideImg"></li>
                             </ul>
                         </div>
-                        <button class="prevBtn" id="prev-blackjack"><img class="navBtn" src="img/prev_arrow.svg" alt=""></button>
-                        <button class="nextBtn" id="next-blackjack"><img class="navBtn" src="img/next_arrow.svg" alt=""></button>
+                        <button class="prevBtn" id="prev-blackjack"><img class="navBtn" src="img/prev_arrow.svg" alt="" onclick="plus_slides_blackjack(-1)"></button>
+                        <button class="nextBtn" id="next-blackjack"><img class="navBtn" src="img/next_arrow.svg" alt="" onclick="plus_slides_blackjack(1)"></button>
                     </div>
                     <a href="https://github.com/noah-lambert/Console_Backjack" target="_blank" class="projectLink" target="_blank">View Code</a>
                 </div>
@@ -143,7 +143,7 @@
     </div>
     <script src="scripts/showMore.js"></script>
     <script src="scripts/slideshow_PlattsMap.js"></script>
-    <!-- <script src="scripts/slideshow_Blackjack.js"></script> -->
+    <script src="scripts/slideshow_Blackjack.js"></script>
     </body>
 
 </html>
