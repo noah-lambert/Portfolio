@@ -219,8 +219,8 @@ body {
     position: relative;
     align-items: center;
     width: 95%;
-    height: 75%;
-    border: 2px solid #EAECEE;;
+    height: 79%;
+    background-color: transparent;
 }
 
 .demo .carousel-container {
@@ -235,12 +235,17 @@ body {
     padding: 0;
 }
 
+#carousel-container-blackjack {
+    width: 50%;
+    height: 100%;
+}
+
 .carousel {
     list-style: none;
     height: 100%;
     position: relative;
-    transition: transform 0.4s ease-in-out;
     margin: 0;
+    padding: 0;
 }
 
 .carousel-slide {
