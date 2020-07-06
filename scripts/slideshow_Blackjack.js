@@ -1,37 +1,22 @@
-const carousel = document.querySelector('#carousel-blackjack');
-const slides = Array.from(carousel.children);
-const nextBtn = document.querySelector('#next-blackjack');
-const prevBtn = document.querySelector('#prev-blackjack');
+var slideIndex = 1;
+show_slides_blackjack(slideIndex);
 
-
-const slideWidth = slides[0].getBoundingClientRect().width;
-
-//set the images next to one another
-const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
-};
-slides.forEach(setSlidePosition);
-
-const moveSlide = (carousel, currentSlide, targetSlide) => {
-    carousel.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-    currentSlide.classList.remove('current-slide');
-    targetSlide.classList.add('current-slide');
+function plus_slides_blackjack(n) {
+    show_slides_blackjack(slideIndex += n);
 }
- 
-//move images to the right
-if(nextBtn){
-    nextBtn.addEventListener('click', e => {
-        const currentSlide = carousel.querySelector('.current-slide');
-        const nextSlide = currentSlide.nextElementSibling;
-        moveSlide(carousel, currentSlide, nextSlide);
-    });
-} 
 
-//move images to the left
-if(prevBtn) {
-    prevBtn.addEventListener('click', e => {
-        const currentSlide = carousel.querySelector('.current-slide');
-        const prevSlide = currentSlide.previousElementSibling;
-        moveSlide(carousel, currentSlide, prevSlide);
-    });
+function show_slides_blackjack(n) {
+    var i;
+    var slides = document.getElementsByClassName("carousel-slide-blackjack");
+
+    if (n > slides.length) {
+      slideIndex = 1;
+    }    
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[slideIndex-1].style.display = "block";  
 }
