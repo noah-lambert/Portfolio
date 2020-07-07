@@ -10,9 +10,9 @@ function showMore1() {
       btnText.innerHTML = "Read More";
       moreText.style.display = "none";
       if (mediaQ.matches) {
-        container.style.height = "425px";
+        container.style.height = "450px";
       } else {
-        container.style.height = "350px";
+        container.style.height = "400px";
       }
       
     } else {
@@ -35,9 +35,9 @@ function showMore1() {
       btnText.innerHTML = "Read More";
       moreText.style.display = "none";
       if (mediaQ.matches) {
-        container.style.height = "425px";
+        container.style.height = "450px";
       } else {
-        container.style.height = "350px";
+        container.style.height = "400px";
       }
     } else {
       dots.style.display = "none";
