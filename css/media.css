@@ -8,6 +8,11 @@
     .personalInfo h6 {
         font-size: 1.25em;
     }
+
+    #carousel-container-plattsmap {
+        width: 80%;
+        height: 100%;
+    }
 }
 
 /* Query for Mobile */
@@ -49,6 +54,16 @@
     .projectContainer div {
         width: 300px;
         height: 425px;
+    }
+
+    #carousel-container-plattsmap {
+        width: 70%;
+        height: 100%;
+    }
+
+    #carousel-container-blackjack {
+        width: 70%;
+        height: 100%;
     }
 
     .about {
