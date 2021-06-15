@@ -73,6 +73,33 @@
 
             </div>
 
+            <div class="projectContainer" id="shopping-cart">
+                <div class="description" id="shopping-cart-description">
+                    <h3 class="projectTitle">Altona Music Store</h3>
+                    <p class="projectDescription">Altona Music Store is an online quick stop shop for all your musical needs.  Built using JSP and a MySQL backend, 
+                        you can create your account, add (and remove) a varitey of items to your cart, view your cart, and checkout with ease.  Tired of shopping for the day?  
+                        Sign out and come back later, our database will store your cart for you for when you come back tomorrow.
+                    </p>
+                    <button class="read-more" id="read-more-">Read More</button>
+                </div>
+                <div class="demo" id="shopping-cart">
+                    <div class="slideshow">
+                        <div class="carousel-container" id="carousel-container-shopping-cart">
+                            <ul class="carousel" id="carousel-shopping-cart">
+                                <li><img class="carousel-slide-shopping-cart" src="img/Blackjack/blackjack_img_1.png" alt="img1" class="slideImg"></li>
+                                <li><img class="carousel-slide-shopping-cart" src="img/Blackjack/blackjack_img_2.png" alt="img2" class="slideImg"></li>
+                                <li><img class="carousel-slide-shopping-cart" src="img/Blackjack/blackjack_img_3.png" alt="img3" class="slideImg"></li>
+                                <li><img class="carousel-slide-shopping-cart" src="img/Blackjack/blackjack_img_4.png" alt="img4" class="slideImg"></li>
+                                <li><img class="carousel-slide-shopping-cart" src="img/Blackjack/blackjack_img_5.png" alt="img5" class="slideImg"></li>
+                            </ul>
+                        </div>
+                        <button class="prevBtn" id="prev-shopping-cart"><img class="navBtn" src="img/prev_arrow.svg" alt="" onclick="plus_slides_shopping_cart(-1)"></button>
+                        <button class="nextBtn" id="next-shopping-cart"><img class="navBtn" src="img/next_arrow.svg" alt="" onclick="plus_slides_shopping_cart(1)"></button>
+                    </div>
+                    <a href="https://github.com/noah-lambert/ShoppingCart" target="_blank" class="projectLink" target="_blank">View Code</a>
+                </div>
+            </div>
+
             <div class="projectContainer" id="blackjack">
                 <div class="description" id="blackjack-description">
                     <h3 class="projectTitle">Console Blackjack</h3>
@@ -150,6 +177,7 @@
     <script src="scripts/showMore.js"></script>
     <script src="scripts/slideshow_PlattsMap.js"></script>
     <script src="scripts/slideshow_Blackjack.js"></script>
+    <script src="scripts/slideshow_ShoppingCart.js"></script>
     </body>
 
 </html>
