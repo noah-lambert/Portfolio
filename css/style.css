@@ -239,6 +239,11 @@ body {
     height: 100%;
 }
 
+#carousel-container-shopping-cart {
+    width: 100%;
+    height: 100%;
+}
+
 #carousel-container-blackjack {
     width: 65%;
     height: 100%;
